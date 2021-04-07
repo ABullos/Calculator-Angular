@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent{
   title = 'calcAngular';
   
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
   subDisplayText = ''; 
   mainDisplayText = '';
   operand1: number;
@@ -16,12 +21,6 @@ export class AppComponent{
   calculationString = '';
   operator = '';
   answered = false;
-  
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 
   pressKey(key: string) {
     if (key === '/' || key === 'x' || key === '-' || key === '+') {
@@ -95,4 +94,3 @@ export class AppComponent{
     this.answered = true;
   }
 }
-
